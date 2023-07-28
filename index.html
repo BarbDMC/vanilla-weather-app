@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="./src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"
+      integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <h1 class="navbar__title">
+          <img class="navbar__image" src="./src/assets/titleIcon.png" />
+          &nbsp;Weather by BarbDMC
+        </h1>
+        <ul class="navbar__listElements">
+          <li>
+            <a target="_blank" href="https://github.com/BarbDMC">Github</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="search">
+      <input
+        class="search__input"
+        id="searchText"
+        type="text"
+        placeholder="Search a city"
+      />
+      <button class="search__button" id="searchButton">Search</button>
+      <button class="search__button" id="currentButton">Current</button>
+    </section>
+
+    <section class="weatherCard">
+      <div class="weatherCard__content">
+        <img src="./src/assets/sunny.png" />
+        <p class="weatherCard__content--city" id="city">
+          &nbsp;
+        </p>
+        <p id="todayDate">&nbsp;</p>
+
+        <p class="weatherCard__content--temperature" id="temperature">
+          &nbsp;
+        </p>
+        <span id="description">&nbsp;</span>
+      </div>
+
+      <h2>Next days</h2>
+      <div id="weatherData" class="weatherCard__content--days"></div>
+    </section>
+
+    <footer>
+      <p>Made with ♡ by BarbDMC</p>
+    </footer>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
