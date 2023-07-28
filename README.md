@@ -7,7 +7,7 @@ This is a weather search app that allows you to find weather from your current l
 - **Current location Functionality**: Use the current button to get your weather location.
 ## How to Use
 
-1.  Visit the app [here](https://www.weatherly-app.com/).
+1.  Visit the app [here](https://main--laughing-lamport-76541e.netlify.app/).
     
 2.  Allow to access your location or enter the city name you want to check the weather for.
     
